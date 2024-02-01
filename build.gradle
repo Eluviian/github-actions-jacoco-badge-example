@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
-    id "jacoco"
+    id "jacoco" //added this
 }
 
 group 'com.example.helloworld'
@@ -27,7 +27,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    finalizedBy jacocoTestReport
+    finalizedBy jacocoTestReport //added this
 }
 
 shadowJar {
